@@ -1,0 +1,168 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-grid {
+    width: 80vw;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+body {
+    overflow: hidden;
+}
+
+.banner{
+    background-image: url(./img/pmv-chamara-hWnkmGOXpCg-unsplash\ 1.svg);
+    height: 100vh;
+    background-repeat: no-repeat;
+} */
+
+
+/* Reset e base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Container centralizado com limite de largura */
+.container-grid {
+    width: 80vw;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Estilo do banner principal */
+.banner {
+    background-image: url(./img/pmv-chamara-hWnkmGOXpCg-unsplash%201.svg);
+    height: 150vh ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+/* Header com logo, busca e menu */
+header {
+    height: 165px;
+    width: 100%;
+}
+
+header img {
+    width: 234px;
+}
+
+header .container-grid {
+    height: 100%;
+}
+
+/* Campo de busca */
+.search-container {
+    display: flex;
+    gap: 10px;
+}
+
+.search-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #45a049;
+}
+
+/* Menu de navegação */
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #4CAF50;
+}
+
+/* Seção sobre a empresa */
+.sobre-a-empresa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-top: 60px;
+    flex-wrap: wrap;
+}
+
+.sobre-a-empresa img {
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.conteudo-sobre {
+    max-width: 600px;
+}
+
+.titulo h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Cartões de qualidade (estrutura básica) */
+.qualit-card-contener {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #f5f5f5;
+}
+
+.qualit-card {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qualit-card img {
+    max-width: 80%;
+    height: auto;
+}
+
+
