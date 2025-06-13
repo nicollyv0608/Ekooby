@@ -1,27 +1,4 @@
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-.container-grid {
-    width: 80vw;
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
-body {
-    overflow: hidden;
-}
-
-.banner{
-    background-image: url(./img/pmv-chamara-hWnkmGOXpCg-unsplash\ 1.svg);
-    height: 100vh;
-    background-repeat: no-repeat;
-} */
-
-
-/* Reset e base */
 * {
     margin: 0;
     padding: 0;
@@ -49,7 +26,7 @@ body {
 /* Estilo do banner principal */
 .banner {
     background-image: url(./img/pmv-chamara-hWnkmGOXpCg-unsplash%201.svg);
-    height: 150vh ;
+    height: 100vh ;
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -141,28 +118,377 @@ header .container-grid {
     margin-bottom: 20px;
 }
 
-/* Cartões de qualidade (estrutura básica) */
+
+
 .qualit-card-contener {
     display: flex;
-    justify-content: center;
-    padding: 40px 20px;
-    background-color: #f5f5f5;
+    justify-content: center; 
+    align-items: center;    
+    gap: 20px;               
+    flex-wrap: wrap;    
+    padding: 20px;
 }
 
 .qualit-card {
-    width: 200px;
-    height: 200px;
-    background-color: white;
+    width: 200px;            /* Tamanho fixo dos cartões */
+    height: 250px;
+    background-color: #f2f2f2;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qualit-card img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.section-title {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 30px auto;
+}
+
+.section-title h2 {
+    font-size: 2em;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 10px;
+    margin: 0 auto;
+}
+
+.section-title h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #2ecc71; /* Linha verde */
+    margin: 8px auto 0;
+    border-radius: 2px;
+}
+
+.qualit-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-title h2 {
+    font-size: 2em;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.section-title h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #2ecc71;
+    margin: 8px auto 0;
+    border-radius: 2px;
+}
+
+.qualit-card-wrapper {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.qualit-card img {
-    max-width: 80%;
-    height: auto;
+.qualit-card-contener {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
 }
+
+.qualit-card {
+    width: 200px;
+    height: 250px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qualit-card img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+
+.arrow:hover {
+    background-color: black;
+    color: white;
+}
+
+.arrow-left {
+    left: 10px;
+}
+
+.arrow-right {
+    right: 10px;
+}
+.qualit-card {
+    width: 200px;
+    height: 280px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center; /* centralizando a */
+}
+
+.qualit-card img {
+    width: 90%; 
+    height: 170px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+.qualit-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0; /* bordas arredondadas */
+border-radius: 8px;
+}
+
+
+.card-info {
+    padding: 10px;
+    text-align: center;
+}
+
+.card-info h3 {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #333;
+}
+
+.card-info p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #2ecc71;
+}
+.banner-produltos {
+    background-image: url('./img/banner\ produltos.svg'); /* Substitua pelo caminho real da imagem */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    border-radius: 30px;
+    padding: 30px 0;
+    margin: 30px auto;
+    width: 95%;
+    max-width: 1300px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.container-grid {
+    width: 1520px;
+    margin: 0 auto;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cards-horizontal-container {
+  display: flex;
+  gap: 20px; /* espaço entre os cards */
+  justify-content: center; /* centralizar no container pai */
+  flex-wrap: wrap; /* para quebrar linha em telas pequenas */
+  padding: 20px;
+}
+
+.card-horizontal {
+  display: flex;
+  background: #f7f7f7; /* cor de fundo leve */
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  max-width: 500px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.card-img img {
+  width: 180px;
+  height: auto;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.card-texto {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-texto h2 {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.card-texto p {
+  margin-bottom: 10px;
+  color: #555;
+  line-height: 1.4;
+}
+
+.card-texto .preco {
+  font-weight: bold;
+  color: #2d7a2d; /* verde suave */
+  font-size: 1.2rem;
+}
+.lancamentos-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.lancamentos-title {
+  font-size: 2.5rem;
+  color: #2d7a2d;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+}
+
+.lancamentos-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #2d7a2d;
+  margin: 8px auto 0 auto;
+  border-radius: 2px;
+}
+
+.feedback-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #f0f6f2;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* Feedback cards  */
+
+.feedback-card {
+  display: flex;
+  background: white;
+  max-width: 480px;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+  padding: 20px;
+  align-items: center;
+  gap: 20px;
+}
+
+.feedback-img img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #2d7a2d;
+}
+
+.feedback-texto p {
+  font-style: italic;
+  color: #444;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.feedback-texto h3 {
+  margin: 0;
+  color: #2d7a2d;
+  font-weight: 700;
+}
+
+.feedback-texto span {
+  font-size: 0.85rem;
+  color: #777;
+}
+.footer {
+  background-color: #143211;
+  color: #f2f2f2;
+  padding: 40px 0 20px;
+  font-family: Arial, sans-serif;
+}
+
+.container-footer {
+  width: 80vw;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/* ---------FOOTER------------ */
+.footer-col {
+  flex: 1 1 250px;
+  margin: 20px;
+}
+
+.footer h3, .footer h4 {
+  color: #b3c7b2;
+  margin-bottom: 10px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: #f2f2f2;
+  transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #183527;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #444;
+  font-size: 0.9rem;
+}
+
 
 
